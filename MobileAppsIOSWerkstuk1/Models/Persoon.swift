@@ -5,16 +5,16 @@ class Persoon {
     private var familienaam: String
     private var adres: Adres
     private var telefoonNummer: String
-    private var locatie: Locatie
-    private var fotoUrl: URL
+    private var coordinaten: Coordinaten
+    private var foto: String
     
-    public init(voornaam: String, familienaam: String, adres: Adres, telefoonNummer: String, locatie: Locatie, fotoUrl: URL) {
+    public init(voornaam: String, familienaam: String, adres: Adres, telefoonNummer: String, coordinaten: Coordinaten, foto: String) {
         self.voornaam = voornaam
         self.familienaam = familienaam
         self.adres = adres
         self.telefoonNummer = telefoonNummer
-        self.locatie = locatie
-        self.fotoUrl = fotoUrl
+        self.coordinaten = coordinaten
+        self.foto = foto
     }
 }
 

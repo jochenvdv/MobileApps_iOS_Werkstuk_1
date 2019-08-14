@@ -1,7 +1,7 @@
 import Foundation
 import MapKit
 
-class Locatie {
+class Coordinaten {
     private var breedtegraad: Double
     private var lengtegraad: Double
     
