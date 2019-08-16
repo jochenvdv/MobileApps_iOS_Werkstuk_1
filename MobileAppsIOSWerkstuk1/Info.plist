@@ -51,5 +51,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Navigeer naar België of simuleer je locatie</string>
 </dict>
 </plist>
