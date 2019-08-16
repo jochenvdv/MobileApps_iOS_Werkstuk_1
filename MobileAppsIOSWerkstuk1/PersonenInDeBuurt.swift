@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  MobileAppsIOSWerkstuk1
 //
 //  Created by student on 10/08/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class PersonenInDeBuurt: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

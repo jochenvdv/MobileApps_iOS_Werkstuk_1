@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F005FE422FEB831008727DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F005FE322FEB831008727DF /* AppDelegate.swift */; };
-		3F005FE622FEB831008727DF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F005FE522FEB831008727DF /* FirstViewController.swift */; };
-		3F005FE822FEB831008727DF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F005FE722FEB831008727DF /* SecondViewController.swift */; };
+		3F005FE622FEB831008727DF /* PersonenLijst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F005FE522FEB831008727DF /* PersonenLijst.swift */; };
+		3F005FE822FEB831008727DF /* PersonenInDeBuurt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F005FE722FEB831008727DF /* PersonenInDeBuurt.swift */; };
 		3F005FEB22FEB831008727DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F005FE922FEB831008727DF /* Main.storyboard */; };
 		3F005FED22FEB832008727DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F005FEC22FEB832008727DF /* Assets.xcassets */; };
 		3F005FF022FEB832008727DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F005FEE22FEB832008727DF /* LaunchScreen.storyboard */; };
@@ -22,8 +22,8 @@
 /* Begin PBXFileReference section */
 		3F005FE022FEB831008727DF /* MobileAppsIOSWerkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppsIOSWerkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F005FE322FEB831008727DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F005FE522FEB831008727DF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3F005FE722FEB831008727DF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3F005FE522FEB831008727DF /* PersonenLijst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonenLijst.swift; sourceTree = "<group>"; };
+		3F005FE722FEB831008727DF /* PersonenInDeBuurt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonenInDeBuurt.swift; sourceTree = "<group>"; };
 		3F005FEA22FEB831008727DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F005FEC22FEB832008727DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F005FEF22FEB832008727DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 				3F5E13AA2304246D00B9396C /* Data */,
 				3F005FF722FEBC3F008727DF /* Models */,
 				3F005FE322FEB831008727DF /* AppDelegate.swift */,
-				3F005FE522FEB831008727DF /* FirstViewController.swift */,
-				3F005FE722FEB831008727DF /* SecondViewController.swift */,
+				3F005FE522FEB831008727DF /* PersonenLijst.swift */,
+				3F005FE722FEB831008727DF /* PersonenInDeBuurt.swift */,
 				3F005FE922FEB831008727DF /* Main.storyboard */,
 				3F005FEC22FEB832008727DF /* Assets.xcassets */,
 				3F005FEE22FEB832008727DF /* LaunchScreen.storyboard */,
@@ -169,10 +169,10 @@
 			files = (
 				3F5E13AC2304248500B9396C /* Personen.swift in Sources */,
 				3F005FFB22FEBC90008727DF /* Adres.swift in Sources */,
-				3F005FE822FEB831008727DF /* SecondViewController.swift in Sources */,
+				3F005FE822FEB831008727DF /* PersonenInDeBuurt.swift in Sources */,
 				3F005FE422FEB831008727DF /* AppDelegate.swift in Sources */,
 				3F005FF922FEBC81008727DF /* Persoon.swift in Sources */,
-				3F005FE622FEB831008727DF /* FirstViewController.swift in Sources */,
+				3F005FE622FEB831008727DF /* PersonenLijst.swift in Sources */,
 				3F005FFF22FEBF9D008727DF /* Coordinaten.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,7 @@
 import Foundation
 
 class Personen {
-    private var lijst: [Persoon]
+    var lijst: [Persoon]
  
     init(){
         self.lijst = [Persoon]()

@@ -1,10 +1,10 @@
 import Foundation
 
 class Adres {
-    private var straat: String
-    private var huisnummer: String
-    private var postcode: String
-    private var plaats: String
+    var straat: String
+    var huisnummer: String
+    var postcode: String
+    var plaats: String
     
     public init(straat: String, huisnummer: String, postcode: String, plaats: String) {
         self.straat = straat
