@@ -40,11 +40,18 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
         }
     }
     
+    @IBAction func verwijder(_ sender: Any) {
+        Personen.verwijderPersoon(persoon: persoon!)
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toonFotoDetail" {
+            print("toonFotoDetail")
             let controller = segue.destination as? FotoDetail
             controller!.foto = persoon!.foto
             controller!.title = nav.title
         }
+
     }
 }

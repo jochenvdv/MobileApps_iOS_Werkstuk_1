@@ -3,7 +3,7 @@ import MapKit
 import CoreLocation
 
 class PersonenInDeBuurt: UIViewController, CLLocationManagerDelegate {
-    let data = Personen().lijst
+    let data = Personen.lijst
     let manager = CLLocationManager()
     
     @IBOutlet weak var map: MKMapView!

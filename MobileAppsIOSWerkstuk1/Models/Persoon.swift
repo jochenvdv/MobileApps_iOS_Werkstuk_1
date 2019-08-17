@@ -8,7 +8,7 @@ class Persoon {
     var coordinaten: Coordinaten
     var foto: String
     
-    public init(voornaam: String, familienaam: String, adres: Adres, telefoonNummer: String, coordinaten: Coordinaten, foto: String) {
+    init(voornaam: String, familienaam: String, adres: Adres, telefoonNummer: String, coordinaten: Coordinaten, foto: String) {
         self.voornaam = voornaam
         self.familienaam = familienaam
         self.adres = adres

@@ -17,9 +17,11 @@
 		3F005FFB22FEBC90008727DF /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F005FFA22FEBC90008727DF /* Adres.swift */; };
 		3F005FFF22FEBF9D008727DF /* Coordinaten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F005FFE22FEBF9D008727DF /* Coordinaten.swift */; };
 		3F255BAB2307051E00EEBA61 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F255BAA2307051E00EEBA61 /* Default-568h@2x.png */; };
+		3F3D6856230858FE00101FF2 /* PersonenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D6855230858FE00101FF2 /* PersonenFactory.swift */; };
 		3F3E196323081F65000A9B70 /* PersoonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E196223081F65000A9B70 /* PersoonDetail.swift */; };
 		3F3E196523081F72000A9B70 /* FotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E196423081F72000A9B70 /* FotoDetail.swift */; };
 		3F5E13AC2304248500B9396C /* Personen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E13AB2304248500B9396C /* Personen.swift */; };
+		3FFD6F3F2308A05C00FE86EC /* NieuwePersoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD6F3E2308A05C00FE86EC /* NieuwePersoon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +37,11 @@
 		3F005FFA22FEBC90008727DF /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
 		3F005FFE22FEBF9D008727DF /* Coordinaten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinaten.swift; sourceTree = "<group>"; };
 		3F255BAA2307051E00EEBA61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3F3D6855230858FE00101FF2 /* PersonenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonenFactory.swift; sourceTree = "<group>"; };
 		3F3E196223081F65000A9B70 /* PersoonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoonDetail.swift; sourceTree = "<group>"; };
 		3F3E196423081F72000A9B70 /* FotoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoDetail.swift; sourceTree = "<group>"; };
 		3F5E13AB2304248500B9396C /* Personen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personen.swift; sourceTree = "<group>"; };
+		3FFD6F3E2308A05C00FE86EC /* NieuwePersoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NieuwePersoon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				3F005FE722FEB831008727DF /* PersonenInDeBuurt.swift */,
 				3F3E196223081F65000A9B70 /* PersoonDetail.swift */,
 				3F3E196423081F72000A9B70 /* FotoDetail.swift */,
+				3FFD6F3E2308A05C00FE86EC /* NieuwePersoon.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5E13AB2304248500B9396C /* Personen.swift */,
+				3F3D6855230858FE00101FF2 /* PersonenFactory.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -191,6 +197,8 @@
 				3F005FE422FEB831008727DF /* AppDelegate.swift in Sources */,
 				3F005FF922FEBC81008727DF /* Persoon.swift in Sources */,
 				3F005FE622FEB831008727DF /* PersonenLijst.swift in Sources */,
+				3FFD6F3F2308A05C00FE86EC /* NieuwePersoon.swift in Sources */,
+				3F3D6856230858FE00101FF2 /* PersonenFactory.swift in Sources */,
 				3F3E196523081F72000A9B70 /* FotoDetail.swift in Sources */,
 				3F005FFF22FEBF9D008727DF /* Coordinaten.swift in Sources */,
 				3F3E196323081F65000A9B70 /* PersoonDetail.swift in Sources */,
