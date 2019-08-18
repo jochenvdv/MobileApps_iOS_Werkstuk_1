@@ -125,7 +125,7 @@
                             <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYl-mp-nwB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="310"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naam" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcV-uC-D4I">
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naam" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcV-uC-D4I">
                                         <rect key="frame" x="61" y="154" width="252" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -147,21 +147,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHa-ge-4un">
-                                        <rect key="frame" x="129" y="33" width="117" height="97"/>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJ0-TS-sdh">
+                                        <rect key="frame" x="121" y="26" width="133" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJ0-TS-sdh">
-                                                <rect key="frame" x="-8" y="-8" width="133" height="113"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <gestureRecognizers/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="R2Y-0e-bie" appends="YES" id="xU3-Ac-0iS"/>
+                                            <outletCollection property="gestureRecognizers" destination="R2Y-0e-bie" appends="YES" id="FzD-Xq-2Bl"/>
                                         </connections>
-                                    </view>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -197,7 +190,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqc-Kn-IXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="R2Y-0e-bie">
                     <connections>
-                        <segue destination="Sqo-jW-ggM" kind="show" identifier="toonFotoDetail" id="ys3-7S-tu7"/>
+                        <action selector="toonFotoDetail:" destination="tVg-oA-6Bj" id="8QQ-eT-4AW"/>
+                        <outlet property="delegate" destination="tVg-oA-6Bj" id="TUp-tZ-cec"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

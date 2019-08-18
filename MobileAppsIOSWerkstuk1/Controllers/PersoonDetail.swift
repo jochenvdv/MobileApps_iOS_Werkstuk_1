@@ -12,6 +12,7 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var nav: UINavigationItem!
     @IBOutlet weak var map: MKMapView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,11 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
         }
     }
     
+    @IBAction func toonFotoDetail(_ sender: Any) {
+        print("omg")
+        performSegue(withIdentifier: "toonFotoDetail", sender: sender)
+    }
+    
     @IBAction func verwijder(_ sender: Any) {
         Personen.verwijderPersoon(persoon: persoon!)
         self.navigationController?.popToRootViewController(animated: true)
@@ -47,7 +53,6 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toonFotoDetail" {
-            print("toonFotoDetail")
             let controller = segue.destination as? FotoDetail
             controller!.foto = persoon!.foto
             controller!.title = nav.title

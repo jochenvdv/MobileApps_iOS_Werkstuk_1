@@ -62,6 +62,7 @@ class NieuwePersoon: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBAction func opslaan(_ sender: Any) {
         let cellen = table.visibleCells as! Array<FormulierCel>
         let persoon = Persoon()
+        var valid = false
         
         for cel in cellen {
             let veld = cel.textLabel!.text!
@@ -74,6 +75,8 @@ class NieuwePersoon: UIViewController, UITableViewDelegate, UITableViewDataSourc
                 self.present(alert, animated: true, completion: nil)
                 break
             }
+            
+            valid = true
             
             switch veld {
             case "Voornaam":
@@ -99,7 +102,9 @@ class NieuwePersoon: UIViewController, UITableViewDelegate, UITableViewDataSourc
             }
         }
         
-        Personen.voegPersoonToe(persoon: persoon)
-        self.navigationController?.popToRootViewController(animated: true)
+        if valid {
+            Personen.voegPersoonToe(persoon: persoon)
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
 }
