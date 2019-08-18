@@ -46,9 +46,8 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Om 1 of andere reden kon mijn iOS simulater geen tap gestures triggeren dus dit is niet getest
-        
         if segue.identifier == "toonFotoDetail" {
+            print("toonFotoDetail")
             let controller = segue.destination as? FotoDetail
             controller!.foto = persoon!.foto
             controller!.title = nav.title

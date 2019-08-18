@@ -18,7 +18,7 @@ class PersonenLijst: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let persoonCel = tableView.dequeueReusableCell(withIdentifier: "PersoonCel", for: indexPath)
-                
+        
         persoonCel.textLabel?.text = "\(Personen.lijst[indexPath.row].voornaam) \(Personen.lijst[indexPath.row].familienaam)"
         persoonCel.imageView?.image = UIImage(named: Personen.lijst[indexPath.row].foto)
         
