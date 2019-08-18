@@ -122,7 +122,7 @@
                             <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYl-mp-nwB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="310"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naam" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcV-uC-D4I">
+	                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naam" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcV-uC-D4I">
                                         <rect key="frame" x="61" y="154" width="252" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -156,6 +156,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <viewLayoutGuide key="safeArea" id="NuF-1a-ypM"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="R2Y-0e-bie" appends="YES" id="iY4-gs-foH"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -334,4 +337,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tRi-VE-i5R"/>
+    </inferredMetricsTieBreakers>
 </document>
