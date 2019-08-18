@@ -11,6 +11,7 @@ class PersonenInDeBuurt: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // source: https://stackoverflow.com/questions/25449469/show-current-location-and-update-location-in-mkmapview-in-swift
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
@@ -30,6 +31,7 @@ class PersonenInDeBuurt: UIViewController, CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // source: https://stackoverflow.com/questions/25449469/show-current-location-and-update-location-in-mkmapview-in-swift
         let userLocation = locations[0]
         let userCoordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude, userLocation.coordinate.longitude)
         let span = MKCoordinateSpanMake(100.0,100.0)

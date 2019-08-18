@@ -69,6 +69,7 @@ class NieuwePersoon: UIViewController, UITableViewDelegate, UITableViewDataSourc
             let waarde = cel.textField!.text!
             
             if waarde == "" {
+                // source: https://stackoverflow.com/questions/24022479/how-would-i-create-a-uialertview-in-swift
                 let alert = UIAlertController(title: "Ongeldige invoer", message: "Je hebt ongeldige waarden ingevuld, kijk ze even na", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                 

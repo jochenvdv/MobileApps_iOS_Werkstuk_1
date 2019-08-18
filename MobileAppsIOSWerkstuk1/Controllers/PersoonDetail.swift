@@ -26,6 +26,7 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
             fotoImage.image = UIImage(named: persoon!.foto)
             nav.title = volledigeNaam
             
+            // source: https://www.ioscreator.com/tutorials/mapkit-ios-tutorial
             let coordinate = CLLocationCoordinate2DMake(persoon!.coordinaten.breedtegraad, persoon!.coordinaten.lengtegraad)
             
             let annotation = MKPointAnnotation()
@@ -47,15 +48,21 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
     
     @IBAction func verwijder(_ sender: Any) {
         Personen.verwijderPersoon(persoon: persoon!)
+        
+        // source: https://stackoverflow.com/questions/47322379/swift-how-to-dismiss-all-of-view-controllers-to-go-back-to-root
         self.navigationController?.popToRootViewController(animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // source: https://stackoverflow.com/questions/24040692/prepare-for-segue-in-swift
+        
+        // Ik kon geen tap gestures triggeren in mijn iOS simulator dus dit is niet getest
+        // Ik heb daardoor een extra button toegevoegd rechts bovenaan om de vergrootte foto te tonen
+        
         if segue.identifier == "toonFotoDetail" {
             let controller = segue.destination as? FotoDetail
             controller!.foto = persoon!.foto
             controller!.title = nav.title
         }
-
     }
 }
