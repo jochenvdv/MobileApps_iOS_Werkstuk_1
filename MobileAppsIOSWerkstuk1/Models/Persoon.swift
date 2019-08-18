@@ -12,7 +12,7 @@ class Persoon {
         voornaam = ""
         familienaam = ""
         telefoonNummer = ""
-        foto = "first"
+        foto = "nobody"
         coordinaten = Coordinaten()
         adres = Adres()
     }

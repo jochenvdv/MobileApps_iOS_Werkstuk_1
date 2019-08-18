@@ -42,7 +42,6 @@ class PersoonDetail: UIViewController, MKMapViewDelegate {
     }
     
     @IBAction func toonFotoDetail(_ sender: Any) {
-        print("omg")
         performSegue(withIdentifier: "toonFotoDetail", sender: sender)
     }
     
